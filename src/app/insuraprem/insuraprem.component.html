@@ -1,0 +1,91 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Health Insurance Premium</a>
+    </div>
+  </div>
+</nav>
+    <div class="row">
+      <div class="col-xs-12">
+    <form>
+      <div class="col-sm-5 form-group">
+          <label for="name">Name</label>
+          <input
+          type="text"
+          id="name"
+          class="form-control"
+          #nameInput>
+        </div>
+      <div class="col-sm-5 form-group">
+        <label for="age">Age</label>
+        <input
+        type="number"
+        id="age"
+        class="form-control"
+        #ageInput>
+      </div>
+      <div class="col-sm-5 form-group">
+          <label for="gender">Gender(M/F/Other)</label>
+          <input
+          type="text"
+          id="gender"
+          class="form-control"
+          #genderInput>
+        </div>
+        <div class="col-md-12 form-group">
+          <label for="selcond">Pre-existing Conditions</label>
+            <select multiple class="form-control" id="selmultiple" #conditionInput>
+                <option>HyperTension</option>
+                <option>Blood pressure</option>
+                <option>Blood sugar</option>
+                <option>Overwight</option>
+            </select>
+          </div>
+          <div class="col-md-12 form-group">
+            <label for="selhabit">Habits</label>
+              <select multiple class="form-control" id="selmultiple" #habitInput>
+                  <option>Smoking</option>
+                  <option>Alcohal</option>
+                  <option>Daily exercise</option>
+                  <option>Drugs</option>
+              </select>
+            </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+          type="submit"
+          class="btn btn-success"
+          (click)="onAddAge()">Submit</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- <div class="row"> -->
+    <!-- <div class="col-sm-2 form-group">
+      <label for="selage">Age</label>
+      <select class="form-control" id="sel1">
+          <option>0-18</option>
+          <option>18-25</option>
+          <option>25-30</option>
+          <option>30-35</option>
+          <option>30-40</option>
+      </select>
+    </div> -->
+      <!-- <input
+      type="number"
+      id="amount"
+      class="form-control"
+      #ageInput> -->
+      <!-- <label for="name">Pre-existing conditions</label>
+      <input
+      type="text"
+      id="conditions"
+      class="form-control"
+      #preexistInput> -->
+      <!-- <div class="col-md-4">
+        <button
+        type="save"
+        class="btn btn-primary"
+        (click)="onSave()">Save</button>
+      </div> -->
